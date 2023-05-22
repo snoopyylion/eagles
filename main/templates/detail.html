@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block loader %} {% include 'loader.html' %} {% endblock loader %}
+{% block header %} {% include 'header.html' %} {% endblock header %}
+{% block banner %} {% include 'banner.html' %} {% endblock banner %}
+{% block content %}
+
+    
+    <!-- content  -->
+    <div class="container">
+      <div class="row det mt-5">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="{{fdet.img.url}}" class="img-fluid rounded-start" style="height: 80vh;" width="500px">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h2 class="card-title text-capitalize">{{fdet.name}}</h2>
+                <h5 class="card-title">₦{{fdet.price}}</h5>
+                <hr>
+                <p class="card-text">{{fdet.description}}</p>
+                  <hr>
+                  <div class="mb-3">
+                    <label for="">Size</label>
+                    <select name="" id="">
+
+                      
+                      {% for item in fsize %}
+                      <option value="">{{item.wearsize|title}}</option>
+                      {% endfor %}
+                        
+                    </select>
+                  </div>
+                  <form action="{% url 'add_to_cart' %}" method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" name="itemid" value="{{product.id}}">
+                    <input type="hidden" name="quantity" value="1">
+                    <button type="submit" class="btn btn-warning">Add to cart</button>
+                  </form>
+                  <p class="detcat">Category: <span>{{fdet.type}}</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+{% endblock content %}
+
+{% block footer %} {% include 'footer.html' %} {% endblock footer %}
