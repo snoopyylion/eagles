@@ -442,296 +442,79 @@ font-weight: 500;
 /* styling profie done  */
 
 @media (max-width: 479px) {
-*{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-}
-.loader-con{
-    width: 100%;
-    height: 100vh;
-    background: white;
-    transition: all 5s ease;
-    position: absolute;
-    z-index: 9999999;
-    overflow: hidden !important;
-}
-.loader-con .loader{
-    width: 100px;
-    height: 100px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border: 15px dashed grey;
-    position: absolute;
-    margin: auto;
-    border-top-color: rgb(111, 43, 0);
-    border-radius: 50%;
-    animation: spin .8s linear infinite;
-}
-@keyframes spin{
-    to{
-        transform: rotate(360deg);
+    .carousel-item img{
+        height: 400vh;
+        width: 300;
     }
-}
-/* header  */
-.navbar{
-    background-color:  rgb(111, 43, 0);
-}
-.navbar-nav a{
-    color: white;
-}
-.nav-item .dropdown-menu{
-    background-color: grey;
-}
-.wrapper{
-    position: relative;
-}
-.wrapper span{
-    position: absolute;
-    top: -2px;
-    right: -10px;
-    background-color: grey;
-    font-size: 8px;
-    border-radius: 50%;
-}
-.nav-item img{
-    border-radius: 50%;
-}
-form .snoopyy{
-    background-color: oldlace;
-    border-radius: 4rem;
-}
-form .snoopyy{
-    color: grey;
-}
-.david{
-    margin-left: 3%;
-    cursor: pointer;
-}
-:root{
-    --bg:white;
-    --icon:black;
-    --text:black;
-}
-.dark{
-    --bg:black;
-    --text:white;
-    --card:black;
-}
-body{
-    background: var(--bg) !important;
-    color: var(--text) !important;
-    /* overflow-y: hidden; */
-    font-family: 'Signika Negative', sans-serif;
-}
-/* header done */
+    .david{
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+    .carousel-control-prev i{
+        font-size: 10px;
+        color: rgb(111, 43, 0);
+    }
+    .carousel-control-next i{
+        font-size: 10px;
+        color: rgb(111, 43, 0);
+    }
+    .popcard{
+        text-align: center;
+        outline: 1px solid rgb(111, 43, 0);
+        box-shadow:0px 0px 30px rgb(111, 43, 0);
+        transition: 1s;
+        cursor: pointer;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 10%;
+        margin-bottom: 10%;
+    }
+    .categ .card{
+        border-radius: 50%;
+        cursor: pointer;
+        margin-top: 2%;
+        width: 80%;
+        margin-left: 5%;
+        margin-right: 15%;
+    }
+    .categ .card h5{
+        position: absolute;
+        top: 80%;
+        left: 30%;
+        padding: 1% 10%;
+        font-size: 10px;
 
-
-/* styling carousel  */
-.carousel-control-prev i{
-    font-size: 50px;
-    color:  rgb(4, 44, 41);
-}
-.carousel-control-next i{
-    font-size: 50px;
-    color:  rgb(4, 44, 41);
-}
-
-.carousel-indicators .active{
-    background-color:   rgb(111, 43, 0)  !important;
-}
-/* styling carousel done */
-
-/* styling content  */
-.popcard{
-    text-align: center;
-    outline: 1px solid  rgb(111, 43, 0);
-    box-shadow:0px 0px 30px  rgb(111, 43, 0);
-    transition: 1s;
-    cursor: pointer;
-}
-.popcard:hover{
-    transform: translateY(-50px);
-}
-.popcard img{
-    height: 400px;
-    border-bottom: 2px solid   rgb(111, 43, 0);
-    box-shadow: 2px solid   rgb(111, 43, 0);
-    padding: 5%;
-}
-.title::after{
-content: '';
-display: block;
-width: 200px;
-height: 5px;
-background-color:   rgb(111, 43, 0);
-margin-left: auto;
-margin-right: auto;
-}
-.catsec{
-    background-color:   rgb(111, 43, 0);
-}
-.categ .card{
-    border-radius: 10%;
-}
-.categ .card h5{
-    position: absolute;
-    top: 80%;
-    left: 20%;
-    padding: 1% 10%;
-}
-.categ .card img{
-    border-radius: 10%;
-    height: 310px;
-    opacity: 1;
-    transition: 3sec;
-    position: relative;
-}
-.categ .card img:hover{
-    transform: scale(1.2);
-}
-.featcard{
-    text-align: center;
-    outline: 1px solid   rgb(111, 43, 0);
-    box-shadow:0px 0px 30px   rgb(111, 43, 0);
-    transition: 3s;
-    cursor: pointer;
-    margin-bottom: 10%;
-
-}
-.featcard img:hover{
-    transform: rotateY(180deg);
-}
-.featcard img{
-    height: 400px;
-    border-bottom: 2px solid   rgb(111, 43, 0);
-    padding: 5%;
-    transition: 2s;
-}
-.featcard button{
-    background-color:   rgb(111, 43, 0);
-    border:none
-}
-
-/* styling content done */
-
-
-/* styling footer  */
-
-footer{
-    background-color: rgb(255, 228, 158);
-}
-.fitem h3{
-    font-size: 20px;
-    text-transform: capitalize;
-    margin-top: 5px;
-
-}
-.fitem ul i{
-    font-size: 30px;
-    color:  rgb(111, 43, 0);
-}
-.fitem ul i:hover{
-    color: black;
-}
-.fitem li{
-   padding-left: 5%;
-}
-
-.flink{
-    text-align: center;
-}
-.flink a{
-    text-decoration: none;
-    text-transform: capitalize;
-    color: black;
-    font-size: 18px;
-    font-weight: 500;
-}
-.ttl{
-    height: 50px;
-}
-/* styling footer done */
-
-/* styling product page  */
-.banner{
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(../img/photo_5787635037892623600_y.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-}
-
-/* styling product page done */
-
-/* styling contact  */
-.contact label{
-    font-weight: 500;
-}
-.contact input:focus{
-    outline: 1px solid  rgb(111, 43, 0);
-    border: none;
-}
-.contact textarea:focus{
-    border: none;
-    outline: 1px solid  rgb(111, 43, 0);
-}
-.contact iframe{
-    height: 70vh;
-}
-/* styling contact done */
-
-/* styling detail  */
-.det .card{
-    border: none;
-}
-
-.det .btn{
-    background-color: rgb(111, 43, 0);
-    border: none;
-}
-.det p{
-    color: black;
-}
-.det label{
-    font-weight: 500;
-}
-.detcat {
-    font-weight: 500;
-    padding-top: 2%;
-    font-style: italic;
-    text-transform: capitalize;
-}
-.detcat span{
-    color: brown;
-}
-/* styling detail done */
-
-
-
-
-
-/* styling sign up  */
+    }
+    .categ .card img{
+        border-radius: 50%;
+        height: 200px;
+        opacity: 1;
+        transition: 0.5sec;
+        position: relative;
+        
+    }
+    .fitem img{
+        height: 50px;
+    }
+    .map iframe{
+        width: 270px;
+    }
+    /* styling sign up  */
 .signup form{
-    width: 50%;
-    margin-top: 20px;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-bottom: 20px;
-    border: 0px solid rgb(111, 43, 0);
-    padding: 5%;
-    box-shadow: 0px 0px 30px brown;
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 15%;
+    /* border: 1px solid rgb(111, 43, 0); */
+    padding: 3%;
+    /* box-shadow: 0px 0px 10px brown; */
+    padding-left: 40px;
+
 }
 .signup form label{
     color: black;
     text-transform: capitalize;
-    font-weight: 500;
-}
-.signup form input{
-    border-radius: 0.6rem;
-    border: 0.5px solid grey;    
+    font-weight: 200;
 }
 .signup form input:focus{
     border: 1px solid rgb(111, 43, 0) !important;
@@ -740,11 +523,10 @@ footer{
 
 .signup .btn{
     background-color: rgb(111, 43, 0);
-    width: 100%;
+    width: 50%;
     color: white;
     text-transform: capitalize;
     font-weight: 500;
-
 }
 .signup p{
     font-weight: 500;
@@ -752,24 +534,6 @@ footer{
 .signup a{
     text-decoration: none;
     color: brown;
-}
-.pass{
-    position: relative;
-}
-.see{
-    position: absolute;
-    top: 55%;
-    right: 20px;
-    cursor: pointer;
-}
-.see .bi-eye-fill{
-    display: none;
-}
-.see.hide .bi-eye-fill{
-    display: block;
-}
-.see.hide .bi-eye-slash-fill{
-    display: none;
 }
 /* styling sign up done */
 /* styling cart  */
@@ -788,7 +552,7 @@ footer{
 .item td{
     padding-top: 2%;
     padding-bottom: 2%;
-    font-weight: 500;
+    font-weight: 300;
     border: 1px solid rgb(111, 43, 0);
 }
 .item img{
@@ -800,19 +564,19 @@ footer{
 }
 .subtot td{
     padding-bottom: 2%;
-    font-weight: 500;
+    font-weight: 300;
 }
 .subtot span{
-    font-size: 20px;
+    font-size: 10px;
     text-transform: capitalize;
-    font-weight: 500;
+    font-weight: 300;
 }
 .subtot button{
     text-transform: capitalize;
 }
 .checkout label{
 text-transform: capitalize;
-font-weight: 500;
+font-weight: 300;
 }
 .checkout input:focus{
     border: 1px solid rgb(111, 43, 0);
@@ -820,522 +584,41 @@ font-weight: 500;
 .checkout button{
     text-transform: capitalize;
 }
-/* styling cart done */
-
-/* styling profie  */
-.pavat{
-    background-color: rgb(111, 43, 0);
-    text-align: center;
+/* header  */
+.navbar{
+    background-color:  rgb(111, 43, 0);
 }
-.pavat h3{
-    font-style: italic;
-}
-.pavat li a{
-    text-decoration: none;
-    text-transform: capitalize;
-    color: white;
-    font-size: 20px;
-
-}
-.pavat img{
-    padding-top: 5%;
-    border-radius: 100%;
-}
-.pavat li a:hover{
-    color: black;
-}
-.pform form{
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-.pform label{
-    text-transform: capitalize;
-    font-weight: 500;
-}
-.pform button{
-    text-transform: capitalize;
-    width: 100%;
-    background-color: rgb(111, 43, 0);
-    border: none;
-    color: white;
-    font-weight: 500;
-}
-
-.thanks p{
-    font-size: 20px;
-}
-
-.thanks{
-    text-align: center;
-}
-.thanks button{
-    background-color: rgb(111, 43, 0);
-}
-.thanks a{
-    text-decoration: none;
-    color: brown;
-    font-weight: 600;
-    
-}
-.tnt a{
-    text-decoration: none;
+.navbar-nav a{
     color: white;
 }
-
-/* styling profie done  */
-
+.nav-item .dropdown-menu{
+    background-color: grey;
+}
+.wrapper{
+    position: relative;
+}
+.wrapper span{
+    position: absolute;
+    top: -2px;
+    right: 315px;
+    background-color: grey;
+    font-size: 8px;
+    border-radius: 50%;
+}
+.nav-item img{
+    border-radius: 50%;
+}
+form{
+    background-color: oldlace;
+    border-radius: 4rem;
+}
+form:hover{
+    color: grey;
+}
 /* header done */
 
 
 /* styling cart done */
 
 
-    
-    
-}
-@media (max-width: 767px) {
-    *{
-        padding: 0%;
-        margin: 0%;
-        box-sizing: border-box;
-    }
-    .loader-con{
-        width: 100%;
-        height: 100vh;
-        background: white;
-        transition: all 5s ease;
-        position: absolute;
-        z-index: 9999999;
-        overflow: hidden !important;
-    }
-    .loader-con .loader{
-        width: 100px;
-        height: 100px;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        border: 15px dashed grey;
-        position: absolute;
-        margin: auto;
-        border-top-color: rgb(111, 43, 0);
-        border-radius: 50%;
-        animation: spin .8s linear infinite;
-    }
-    @keyframes spin{
-        to{
-            transform: rotate(360deg);
-        }
-    }
-    /* header  */
-    .navbar{
-        background-color:  rgb(111, 43, 0);
-    }
-    .navbar-nav a{
-        color: white;
-    }
-    .nav-item .dropdown-menu{
-        background-color: grey;
-    }
-    .wrapper{
-        position: relative;
-    }
-    .wrapper span{
-        position: absolute;
-        top: -2px;
-        right: -10px;
-        background-color: grey;
-        font-size: 8px;
-        border-radius: 50%;
-    }
-    .nav-item img{
-        border-radius: 50%;
-    }
-    form .snoopyy{
-        background-color: oldlace;
-        border-radius: 4rem;
-    }
-    form .snoopyy{
-        color: grey;
-    }
-    .david{
-        margin-left: 3%;
-        cursor: pointer;
-    }
-    :root{
-        --bg:white;
-        --icon:black;
-        --text:black;
-    }
-    .dark{
-        --bg:black;
-        --text:white;
-        --card:black;
-    }
-    body{
-        background: var(--bg) !important;
-        color: var(--text) !important;
-        /* overflow-y: hidden; */
-        font-family: 'Signika Negative', sans-serif;
-    }
-    /* header done */
-    
-    
-    /* styling carousel  */
-    .carousel-control-prev i{
-        font-size: 50px;
-        color:  rgb(4, 44, 41);
-    }
-    .carousel-control-next i{
-        font-size: 50px;
-        color:  rgb(4, 44, 41);
-    }
-    
-    .carousel-indicators .active{
-        background-color:   rgb(111, 43, 0)  !important;
-    }
-    /* styling carousel done */
-    
-    /* styling content  */
-    .popcard{
-        text-align: center;
-        outline: 1px solid  rgb(111, 43, 0);
-        box-shadow:0px 0px 30px  rgb(111, 43, 0);
-        transition: 1s;
-        cursor: pointer;
-    }
-    .popcard:hover{
-        transform: translateY(-50px);
-    }
-    .popcard img{
-        height: 400px;
-        border-bottom: 2px solid   rgb(111, 43, 0);
-        box-shadow: 2px solid   rgb(111, 43, 0);
-        padding: 5%;
-    }
-    .title::after{
-    content: '';
-    display: block;
-    width: 200px;
-    height: 5px;
-    background-color:   rgb(111, 43, 0);
-    margin-left: auto;
-    margin-right: auto;
-    }
-    .catsec{
-        background-color:   rgb(111, 43, 0);
-    }
-    .categ .card{
-        border-radius: 10%;
-    }
-    .categ .card h5{
-        position: absolute;
-        top: 80%;
-        left: 20%;
-        padding: 1% 10%;
-    }
-    .categ .card img{
-        border-radius: 10%;
-        height: 310px;
-        opacity: 1;
-        transition: 3sec;
-        position: relative;
-    }
-    .categ .card img:hover{
-        transform: scale(1.2);
-    }
-    .featcard{
-        text-align: center;
-        outline: 1px solid   rgb(111, 43, 0);
-        box-shadow:0px 0px 30px   rgb(111, 43, 0);
-        transition: 3s;
-        cursor: pointer;
-        margin-bottom: 10%;
-    
-    }
-    .featcard img:hover{
-        transform: rotateY(180deg);
-    }
-    .featcard img{
-        height: 400px;
-        border-bottom: 2px solid   rgb(111, 43, 0);
-        padding: 5%;
-        transition: 2s;
-    }
-    .featcard button{
-        background-color:   rgb(111, 43, 0);
-        border:none
-    }
-    
-    /* styling content done */
-    
-    
-    /* styling footer  */
-    
-    footer{
-        background-color: rgb(255, 228, 158);
-    }
-    .fitem h3{
-        font-size: 20px;
-        text-transform: capitalize;
-        margin-top: 5px;
-    
-    }
-    .fitem ul i{
-        font-size: 30px;
-        color:  rgb(111, 43, 0);
-    }
-    .fitem ul i:hover{
-        color: black;
-    }
-    .fitem li{
-       padding-left: 5%;
-    }
-    
-    .flink{
-        text-align: center;
-    }
-    .flink a{
-        text-decoration: none;
-        text-transform: capitalize;
-        color: black;
-        font-size: 18px;
-        font-weight: 500;
-    }
-    .ttl{
-        height: 50px;
-    }
-    /* styling footer done */
-    
-    /* styling product page  */
-    .banner{
-        background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(../img/photo_5787635037892623600_y.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 80vh;
-    }
-    
-    /* styling product page done */
-    
-    /* styling contact  */
-    .contact label{
-        font-weight: 500;
-    }
-    .contact input:focus{
-        outline: 1px solid  rgb(111, 43, 0);
-        border: none;
-    }
-    .contact textarea:focus{
-        border: none;
-        outline: 1px solid  rgb(111, 43, 0);
-    }
-    .contact iframe{
-        height: 70vh;
-    }
-    /* styling contact done */
-    
-    /* styling detail  */
-    .det .card{
-        border: none;
-    }
-    
-    .det .btn{
-        background-color: rgb(111, 43, 0);
-        border: none;
-    }
-    .det p{
-        color: black;
-    }
-    .det label{
-        font-weight: 500;
-    }
-    .detcat {
-        font-weight: 500;
-        padding-top: 2%;
-        font-style: italic;
-        text-transform: capitalize;
-    }
-    .detcat span{
-        color: brown;
-    }
-    /* styling detail done */
-    
-    
-    
-    
-    
-    /* styling sign up  */
-    .signup form{
-        width: 50%;
-        margin-top: 20px;
-        margin-left: 25%;
-        margin-right: 25%;
-        margin-bottom: 20px;
-        border: 0px solid rgb(111, 43, 0);
-        padding: 5%;
-        box-shadow: 0px 0px 30px brown;
-    }
-    .signup form label{
-        color: black;
-        text-transform: capitalize;
-        font-weight: 500;
-    }
-    .signup form input{
-        border-radius: 0.6rem;
-        border: 0.5px solid grey;    
-    }
-    .signup form input:focus{
-        border: 1px solid rgb(111, 43, 0) !important;
-        outline: none !important;
-    }
-    
-    .signup .btn{
-        background-color: rgb(111, 43, 0);
-        width: 100%;
-        color: white;
-        text-transform: capitalize;
-        font-weight: 500;
-    
-    }
-    .signup p{
-        font-weight: 500;
-    }
-    .signup a{
-        text-decoration: none;
-        color: brown;
-    }
-    .pass{
-        position: relative;
-    }
-    .see{
-        position: absolute;
-        top: 55%;
-        right: 20px;
-        cursor: pointer;
-    }
-    .see .bi-eye-fill{
-        display: none;
-    }
-    .see.hide .bi-eye-fill{
-        display: block;
-    }
-    .see.hide .bi-eye-slash-fill{
-        display: none;
-    }
-    /* styling sign up done */
-    /* styling cart  */
-    .cart table{
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-        border: 1px solid rgb(111, 43, 0);
-        text-align: center;
-    }
-    .cart thead{
-        background-color: rgb(111, 43, 0);
-        text-transform: capitalize;
-        color: white;
-    }
-    .item td{
-        padding-top: 2%;
-        padding-bottom: 2%;
-        font-weight: 500;
-        border: 1px solid rgb(111, 43, 0);
-    }
-    .item img{
-        transition: 1s;
-        cursor: pointer;
-    }
-    .item img:hover{
-        transform: scaleY(2);
-    }
-    .subtot td{
-        padding-bottom: 2%;
-        font-weight: 500;
-    }
-    .subtot span{
-        font-size: 20px;
-        text-transform: capitalize;
-        font-weight: 500;
-    }
-    .subtot button{
-        text-transform: capitalize;
-    }
-    .checkout label{
-    text-transform: capitalize;
-    font-weight: 500;
-    }
-    .checkout input:focus{
-        border: 1px solid rgb(111, 43, 0);
-    }
-    .checkout button{
-        text-transform: capitalize;
-    }
-    /* styling cart done */
-    
-    /* styling profie  */
-    .pavat{
-        background-color: rgb(111, 43, 0);
-        text-align: center;
-    }
-    .pavat h3{
-        font-style: italic;
-    }
-    .pavat li a{
-        text-decoration: none;
-        text-transform: capitalize;
-        color: white;
-        font-size: 20px;
-    
-    }
-    .pavat img{
-        padding-top: 5%;
-        border-radius: 100%;
-    }
-    .pavat li a:hover{
-        color: black;
-    }
-    .pform form{
-        width: 70%;
-        margin-left: 15%;
-        margin-right: 15%;
-    }
-    .pform label{
-        text-transform: capitalize;
-        font-weight: 500;
-    }
-    .pform button{
-        text-transform: capitalize;
-        width: 100%;
-        background-color: rgb(111, 43, 0);
-        border: none;
-        color: white;
-        font-weight: 500;
-    }
-    
-    .thanks p{
-        font-size: 20px;
-    }
-    
-    .thanks{
-        text-align: center;
-    }
-    .thanks button{
-        background-color: rgb(111, 43, 0);
-    }
-    .thanks a{
-        text-decoration: none;
-        color: brown;
-        font-weight: 600;
-        
-    }
-    .tnt a{
-        text-decoration: none;
-        color: white;
-    }
-    
-    /* styling profie done  */
-    
 }
